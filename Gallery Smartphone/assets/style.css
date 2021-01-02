@@ -1,0 +1,325 @@
+/* For All */
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body	{
+	font-family: helvetica;
+	background-color: #f0f8fc;
+	position: absolute;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Scrollbar */
+* 	{
+	scrollbar-width: thin;
+	scrollbar-color: #232323 #666;
+}
+
+*::-webkit-scrollbar {
+	width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+	background-color: #666;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #232323;
+}
+
+/* Animmation */
+@keyframes AnimasiCard {
+	0% {
+		box-shadow: 0;
+	}
+
+	100% {
+		box-shadow: 0 0 10px 1px rgba(0,0,0,.5);
+	}
+}
+
+/* Header */
+header 	{
+	width: 100%;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #3bbaf5;
+	position: fixed;
+	z-index: 1;
+}
+
+header ul {
+	width: 40%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header ul li a {
+	align-items: center;
+	text-decoration: none;
+	color: white;
+}
+
+header ul li a:hover{
+	color: blue;
+	font-weight: bold;
+}
+
+/* Content */
+main {
+	margin-top: 100px;
+	padding: 20px 0 10px 100px;
+}
+
+main .content {
+	width: 75%;
+}
+
+main .content .head {
+	background-color: #47bef5;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.head h1 {
+	margin-bottom: 20px;
+	font-size: 24px;
+}
+
+.head p {
+	margin-bottom: 10px;
+	text-align: justify;
+	font-size: 18px;
+}
+
+	/* Batas Article Head*/
+
+.gallery .brand {
+	display: flex;
+	align-items: center;
+}	
+
+.brand.asus		{
+	width: 190px;
+	height: 50px;
+	background-image: linear-gradient(-35deg, #2295d4, #46b1eb);
+	box-sizing: border-box;
+	border-radius: 10px 10px 0 0;
+	margin-top: 60px;
+}
+
+.brand.oppo		{
+	width: 190px;
+	height: 50px;
+	background-image: linear-gradient(-35deg, #2295d4, #46b1eb);
+	box-sizing: border-box;
+	border-radius: 10px 10px 0 0;
+}
+
+.brand.realme		{
+	width: 190px;
+	height: 50px;
+	background-image: linear-gradient(-35deg, #2295d4, #46b1eb);
+	padding: 5px 0 7px 15px;
+	box-sizing: border-box;
+	border-radius: 10px 10px 0 0;
+}
+
+.brand.samsung		{
+	width: 190px;
+	height: 50px;
+	background-image: linear-gradient(-35deg, #2295d4, #46b1eb);
+	padding: 12px 0 0px 15px;
+	box-sizing: border-box;
+	border-radius: 10px 10px 0 0;
+}
+
+.brand img {
+	width: 70%;
+}
+
+.board {
+	background-image: linear-gradient(-35deg, #00539b, #2295d4, #46b1eb);
+	border-radius: 0px 10px 10px 10px;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.card {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.card li {
+	background-color: #fff;
+	margin: 20px 10px;
+	border-radius: 5px;
+	padding: 10px 10px 20px 10px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.card li:hover	{
+	animation-name: AnimasiCard;
+	animation-duration: .8s;
+	animation-fill-mode: forwards;
+	animation-direction: alternate;
+	animation-timing-function: ease;
+	cursor: pointer;
+}
+
+li img 	{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+a p 	{
+	color: black;
+}
+
+/* Overlay */
+.overlay 	{
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	top: 0;
+	right: 0;
+	position: fixed;
+	background-color: rgba(0,0,0,0);
+	text-align: center;
+	z-index: 10;
+	transition: .8s;
+}
+
+.overlay:target	{
+	width: auto;
+	height: auto;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0,.8);
+}
+
+.close {
+	margin: 120px auto 0;
+	width: 60%;
+	height: 40px;
+	background-color: #00a2ed;
+	display: flex;
+	justify-content: space-around;
+	padding: 5px;
+	box-sizing: border-box;
+	box-shadow: 0 0 10px 0 rgba(255,255,255,.4);
+}
+
+.close h3 {
+	width: 60%;
+	display: flex;
+	justify-content: flex-end;
+	padding: 5px;
+}
+
+.close a {
+	width: 40%;
+	display: flex;
+	justify-content: flex-end;
+	padding: 5px;
+	color: white;
+}
+
+.spek	{
+	margin: 0 auto;
+	width: 60%;
+	height: 360px;
+	background-color: rgba(255,255,255,1);
+	box-shadow: 0 0 13px 0 rgba(255,255,255,.8);
+	z-index: 11;
+	text-align: left;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-around;
+	padding: 5px 0 5px 10px;
+}
+
+.spek .img-s 	{
+	width: 35%;
+	margin-right: 10px;
+}
+
+.text {
+	width: 65%;
+	padding: 0 1px 10px 10px;
+	overflow: auto;
+}
+
+
+.text h4 {
+	font-size: 1em;
+	margin-bottom: 6px;
+}
+
+table,
+tr,
+td{
+	border-collapse: collapse;
+	padding: 2px;
+}
+
+table 	{
+	width: 100%;
+	margin-bottom: 12px;
+}
+
+tr td {
+	font-size: 1em;
+}
+
+td:nth-child(1) {
+	width: 45%;
+}
+
+tr:nth-child(odd) {
+	background-color: skyblue;
+}
+tr:nth-child(even) {
+	background-color: #dbefff;
+}
+
+/* Footer */
+footer {
+	background-color: #0e1b21;
+	color: white;
+	text-align: center;
+	padding: 20px !important;	
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+footer p.copy {
+	width: 60%;
+	font-size: 1.1em;
+	display: flex;
+	justify-content: flex-end;
+}
+
+aside {
+	width: 40%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+aside .id {
+	text-align: right;
+}

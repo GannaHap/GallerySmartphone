@@ -1,0 +1,141 @@
+@media screen and (max-width: 768px) {
+	/*All*/
+
+	*::-webkit-scrollbar {
+	width: 5px;
+	}
+
+
+	/* Header */
+
+	header {
+		height: 70px;
+	}
+
+	header .logo img {
+		width: 75%
+	}
+
+	header ul {
+		width: 50%;
+	}
+
+	header ul li a {
+		font-size: .8em
+	}
+
+	/* Content*/
+	main {
+		margin-top: 80px;
+		padding: 12px 0 10px 40px;
+	}
+
+	main .content {
+		width: 95%;
+	}
+
+	main .content .head {
+		padding: 17px;
+	}
+
+	.head h1 {
+		margin-bottom: 17px;
+		font-size: 1em;
+	}
+
+	.head p {
+		margin-bottom: 9px;
+		font-size: .8em
+	}
+		/* Batas Article Head*/
+
+	.gallery .brand {
+		width: 128px;
+		height: 34px;
+		margin-top: 45px;
+	}	
+
+	.brand img {
+		width: 70%;
+	}
+
+	.board {
+		margin-bottom: 15px;
+		padding: 7px;
+	}
+
+	.card li {
+		margin: 7px 12px;
+	}
+
+	li img {
+		width: 75%;
+	}
+
+	a p 	{
+		font-size: .7em
+	}
+
+	/* Overlay */
+
+	.close 	{
+		margin: 90px auto 0;
+		width: 60%;
+		height: 25px;
+	}
+
+	.close h3 {
+		width: 60%;
+		/*background-color: #fff;*/
+		padding: 3px;
+		font-size: .75em;
+	}
+
+	.close a {
+		width: 40%;
+		/*background-color: #ddd;*/
+		padding: 2px;
+		font-size: .8em
+	}
+
+	.spek 	{
+		margin: 0px auto;
+		width: 60%;
+		height: 240px;
+		padding: 5px 0 5px 10px;
+	}
+
+	.text {
+		padding: 0 0 0 7px;
+	}
+
+	.text h4 {
+		font-size: .65em;
+		margin-bottom: 5px;
+	}
+
+	tr td {
+		font-size: .5em;
+	}
+
+	/*Footer*/
+	footer 	{
+		padding: 8px !important;
+	}
+
+	footer p.copy {
+		font-size: .75em;
+	}
+
+	footer .id h5 {
+		font-size: .7em;
+	}
+
+	footer .id img {
+		width: 25%;
+	}
+
+	footer .id p {
+		font-size: .7em;
+	}
+}
